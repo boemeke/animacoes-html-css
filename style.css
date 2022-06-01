@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
 
 body {
@@ -27,7 +26,6 @@ body {
     border-bottom-right-radius: 40%;
 }
 
-
 .eyeLeft {
     position: absolute;
 
@@ -36,22 +34,20 @@ body {
     border-top-left-radius: 50%;
 
     background-color: black;
-    
+
     top: 110px;
     left: 50px;
-    background: linear-gradient(to top,rgb(75, 75, 75), rgb(0, 0, 0) );
+    background: linear-gradient(to top, rgb(75, 75, 75), rgb(0, 0, 0));
 
     transition: 400ms;
 }
 
 .cup:hover .eyeLeft {
-
     height: 50px;
     width: 40px;
-    
+
     transform: rotateZ(15deg);
     border-radius: 50%;
-    
 }
 
 .cup:hover .eyeShineLeft {
@@ -67,7 +63,6 @@ body {
     left: 6px;
 
     transition: 400ms;
-
 }
 
 .eyeRight {
@@ -78,7 +73,7 @@ body {
     border-top-right-radius: 50%;
 
     background-color: black;
-    background: linear-gradient(to top,rgb(75, 75, 75), rgb(0, 0, 0) );
+    background: linear-gradient(to top, rgb(75, 75, 75), rgb(0, 0, 0));
 
     top: 110px;
     left: 190px;
@@ -88,7 +83,7 @@ body {
 
 
 .cup:hover .eyeRight {
-    
+
     height: 50px;
     width: 40px;
     transform: rotateZ(-15deg);
@@ -108,7 +103,6 @@ body {
     left: 11px;
 
     transition: 400ms;
-
 }
 
 .cup:hover .cheekLeft {
@@ -136,37 +130,35 @@ body {
     background-color: #db6b6b;
     filter: blur(8px);
 
-
     top: 190px;
     left: 190px;
 
-   animation: cheek 2s;
+    animation: cheek 2s;
 }
-@keyframes cheek{
-    0%
-    {
+
+@keyframes cheek {
+    0% {
         opacity: 0;
     }
-    15%
-    {
+
+    15% {
         opacity: 0.25;
     }
-    30%
-    {
+
+    30% {
         opacity: 0.50;
     }
-    50%
-    {
+
+    50% {
         opacity: 0.75;
     }
-    100%
-    {
+
+    100% {
         opacity: 1;
-        
+
     }
 
 }
-
 
 .top {
     position: absolute;
@@ -268,8 +260,6 @@ body {
     filter: blur(8px);
     animation-delay: calc(var(--i) * -0.5s);
 }
-
-
 
 @keyframes animate {
     0% {
