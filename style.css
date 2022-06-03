@@ -26,6 +26,36 @@ body {
     border-bottom-right-radius: 40%;
 }
 
+.mouth {
+    
+    position: absolute;
+    left: 45%;
+    width: 9%;
+    height: 4%;
+    border-radius: 50%;
+    bottom: 57px;
+    background: rgb(0, 0, 0);
+    transition: ease-in-out 400ms;
+    
+    
+
+}
+
+.cup:hover .-open {
+    
+    position: absolute;
+    left: 36%;
+    width: 25%;
+    height: 2%;
+    border-radius: 30%;
+    bottom: 60px;
+    background: black;
+
+    border-top: 50px solid #f9f9f9;
+    border-bottom: 30px solid black;
+    
+}
+
 .eyeLeft {
     position: absolute;
 
@@ -39,7 +69,7 @@ body {
     left: 50px;
     background: linear-gradient(to top, rgb(75, 75, 75), rgb(0, 0, 0));
 
-    transition: 400ms;
+    transition: ease-in-out 400ms;
 }
 
 .cup:hover .eyeLeft {
@@ -78,7 +108,8 @@ body {
     top: 110px;
     left: 190px;
 
-    transition: 400ms;
+    transition: ease-in-out 400ms;
+    
 }
 
 
