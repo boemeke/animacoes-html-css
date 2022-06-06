@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 
 body {
@@ -28,32 +29,59 @@ body {
 
 .mouth {
     position: absolute;
-    left: 45%;
-    width: 9%;
-    height: 4%;
-    border-radius: 50%;
-    bottom: 57px;
-    background: rgb(0, 0, 0);
-    transition: ease-in-out 400ms;
+    bottom: 60px;
+    
+    transition: ease-in-out 1s;
+    animation: mouth-animation 1.8s alternate infinite;
+    
+
 }
 
-.cup:hover .-open {
+@keyframes mouth-animation {
+    from {
+
+        left: 45%;
+        width: 9%;
+        height: 2%;
+        border-radius: 100%;
+        bottom: 60px;
+        background: rgb(0, 0, 0);
+
+    }
+
+    to {
+
+        left: 45%;
+        width: 9%;
+        height: 6%;
+        border-radius: 100%;
+        bottom: 60px;
+        background: rgb(0, 0, 0);
+
+    }
+}
+
+.cup:hover .mouth {
 
     position: absolute;
-    left: 36%;
-    width: 25%;
-    height: 2%;
-    border-radius: 30%;
-    bottom: 60px;
-    background: black;
+    left: 45%;
+    width: 10%;
 
-    border-top: 50px solid #f9f9f9;
-    border-bottom: 30px solid black;
+    bottom: 65px;
+
+    border-bottom: 30px solid  black;
+
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+
+    animation: mouth-animation 1.8s;
+    transition: ease-in-out 2s;
+    
+   
 }
 
 .eyeLeft {
     position: absolute;
-
     height: 13px;
     width: 50px;
     border-top-left-radius: 50%;
@@ -160,19 +188,11 @@ body {
 }
 
 @keyframes cheek {
-    0% {
+    from {
         opacity: 0;
     }
-    15% {
-        opacity: 0.25;
-    }
-    30% {
-        opacity: 0.50;
-    }
-    50% {
-        opacity: 0.75;
-    }
-    100% {
+
+    to {
         opacity: 1;
     }
 }
@@ -283,12 +303,15 @@ body {
         transform: translateY(0) scaleX(1);
         opacity: 0;
     }
+
     15% {
         opacity: 1;
     }
+
     50% {
         transform: translateY(-150px) scaleX(5);
     }
+
     100% {
         transform: translateY(-300px) scaleX(10);
     }
